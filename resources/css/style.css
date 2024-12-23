@@ -3,12 +3,21 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .main-content {
   position: relative;
   top: 5.3125rem;
-  /* To offset for fixed header. */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .center {
@@ -32,7 +41,7 @@ html {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 1024px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -81,7 +90,6 @@ nav a {
 
 }
 
-
 nav a:hover {
   color: #4a4a4a80;
 }
@@ -95,7 +103,35 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 895px) {
+header .button{
+  display: none;
+
+}
+@media only screen and (max-width: 1024px) {
+
+  header .content {
+    padding: 1rem 1rem;
+  }
+
+  header .button {
+    display: inline-block;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+
+  nav li {
+    padding-left: 2rem;
+  }
+
+  nav a {
+    font-size: 0.875rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
@@ -188,7 +224,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 1024px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -275,7 +311,7 @@ header .mobile {
   padding: 2.5rem 0;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 1024px) {
   #features-section {
     padding: 1rem;
   }
@@ -400,7 +436,7 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 1024px) {
   #quotes-section .content {
     padding: 3rem 1.5rem;
   }
@@ -447,4 +483,5 @@ footer .copyright {
   footer .content {
     font-size: .625rem;
   }
+
 }
