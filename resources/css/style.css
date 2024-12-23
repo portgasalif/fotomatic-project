@@ -32,7 +32,7 @@ html {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 895px){
+@media only screen and (max-width: 895px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -69,7 +69,7 @@ header nav ul {
 
 nav li {
   padding-left: 3.5rem;
-  
+
 }
 
 nav a {
@@ -270,6 +270,7 @@ header .mobile {
   font-weight: 300;
   color: #4a4a4a;
 }
+
 .feature .content {
   padding: 2.5rem 0;
 }
@@ -278,12 +279,14 @@ header .mobile {
   #features-section {
     padding: 1rem;
   }
+
   .feature {
     margin: 0px .5rem;
     padding: 1rem;
   }
+
   .feature h2 {
-    font-size: 2rem;
+    font-size:  1.125rem;
     line-height: 1.3;
     font-weight: normal;
   }
@@ -304,6 +307,7 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
   .feature .content {
     padding: 1.25rem 0 1.875rem 0;
   }
@@ -337,9 +341,10 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
